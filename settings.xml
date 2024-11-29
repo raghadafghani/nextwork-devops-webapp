@@ -1,0 +1,3 @@
+<settings>
+FOR /F "tokens=*" %g IN ('aws codeartifact get-authorization-token --domain nextwork --domain-owner 509399597364 --region us-east-1 --query authorizationToken --output text') do (SET CODEARTIFACT_AUTH_TOKEN=%g)
+</settings>
